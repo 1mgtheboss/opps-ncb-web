@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Over Pricing Prevention System (OPPS) - NC Based</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+        body {
+background: #d53369;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color: #ffffff;
+font-family: 'Raleway', sans-serif;
+
+}
+
+textarea, div, input {
+width: 100%;
+background: transparent;
+border: 1px solid #ffffff;
+
+}
+
+textarea, input {
+color: #ffffff;
+}
+
+div {
+border: 1px solid #ffffff;
+cursor: pointer;
+}
+
+textarea {
+overflow: hidden;
+resize: none;
+outline: none;
+
+}
+
+input {
+outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+  font-family: 'Raleway', sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="client.js"></script>
+</head>
+
+<body>
+    <div style="border: none; font-size: 500%; cursor: default;">Over Pricing Prevention System (OPPS) - NC Based</div><br><br>
+    <textarea rows="4" placeholder="Please enter transaction data ..." id="enter-data"></textarea><br><br>
+    <div id="test-data">Use test transaction data ...</div><br>
+    <input type="text" id="class-no" placeholder="Please enter class no (1-45) ..."><br><br>
+    <div id="process">Process transaction data ...</div><br><br>
+    <div style="border: none; display: none; cursor: default;" id="result"></div>
+
+
+</body>
+
+</html>
